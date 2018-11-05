@@ -1,0 +1,12 @@
+
+button {
+margin: 5px;
+}
+
+
+.start {
+    margin: 5px;
+    background: grey;
+    color: blue;
+    border-block-start-color: aqua;
+}
