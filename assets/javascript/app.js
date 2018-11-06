@@ -3,24 +3,32 @@
 var api_Key = "FrAfCkgZ9Zx55XRZn1U3yYUdnsf7NQcA";
 var buttons = ["alligator", "bugs", "plants", "dogs", "elephants", "frogs"];
 
-
-$(".start").on("click", function () {
+// $(".start").on("click", function () {
+$(document).ready(function () {
 
 	for (var i = 0; i < buttons.length; i++) {
 		var giphyBtn = $("<button>");
 		giphyBtn.attr("data-giphy", buttons[i]);
+
+		// var giphyName = (buttons[i]);
+
+		// giphyBtn.attr({
+		// 	"class": 'button',
+		// 	"data-giphy": giphyName
+		// });
+		// console.log(giphyName);
+
 		giphyBtn.text(buttons[i]);
 		$("#buttons").append(giphyBtn);
-		console.log(giphyBtn);
 	}
-});
 
-$("#buttons").on("click", function () {
-	console.log(buttons);
 
-	var giphyBtn = $("#buttons").attr("data-giphy");
-	console.log(giphyBtn);
-	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + buttons + "&api_key=" + api_Key + "&limit=2";
+$("button").on("click", function () {
+
+	// var giphy = $(this).attr("data-giphy");
+	var giphy = $(this).attr("data-giphy");
+	console.log(giphy);
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + giphy + "&api_key=" + api_Key + "&limit=2";
 
 	$.ajax({
 		url: queryURL,
@@ -43,4 +51,5 @@ $("#buttons").on("click", function () {
 				$(".gifDisplay").prepend(giphyDiv);
 			}
 		});
-	});
+});
+});
