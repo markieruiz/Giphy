@@ -1,12 +1,27 @@
 
 button {
-margin: 5px;
-}
-
-
-.start {
     margin: 5px;
-    background: grey;
-    color: blue;
-    border-block-start-color: aqua;
+    }
+    
+img {
+    height: 300px;
+    width: 300px;
+    padding: 25px;
 }
+
+.gifDisplay {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+
+p {
+    padding: 25px;
+}
+
+
+.float-right {
+
+}
+ 
