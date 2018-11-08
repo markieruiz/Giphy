@@ -11,17 +11,18 @@ img {
 
 .gifDisplay {
     display: flex;
-    /* justify-content: space-evenly; */
     align-items: center;
 }
 
-
 p {
-    padding: 25px;
+    padding:0px 25px 0px 25px;
+
 }
 
-
-.float-right {
+#giphy-form {
+float: right;
+padding:100px;
+align-items: left; 
 
 }
  

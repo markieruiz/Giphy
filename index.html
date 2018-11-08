@@ -13,6 +13,17 @@
 </head>
 
 <body>
+
+  <form>
+    <div class="float-md-right">
+      <div class="form-group" id="giphy-form">
+        <label for="giphyAdd">Add a Giphy</label>
+        <input type="text" class="form-control" id="giphy-input" placeholder="Enter giphy">
+        <button type="submit" id="find-giphy" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Giphy World</h1>
@@ -20,22 +31,16 @@
         it.</p>
       <hr class="my-4">
       <div id="buttons"></div>
-
-      <form>
-        <div class="float-md-right">
-          <div class="form-group">
-            <label for="giphyAdd">Add a Giphy</label>
-            <input type="text" class="form-control" id="giphyAdd" placeholder="Enter giphy">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </div>
-      </form>
     </div>
   </div>
 
   <div class="container">
     <div class="row">
-      <div class="gifDisplay">
+      <div class="col-lg-10">
+        <div class="row gifDisplay">
+        </div>
+        <div class="col-lg-2">
+        </div>
       </div>
     </div>
   </div>
