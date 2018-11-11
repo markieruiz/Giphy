@@ -1,6 +1,6 @@
 
 var api_Key = "FrAfCkgZ9Zx55XRZn1U3yYUdnsf7NQcA";
-var topics = ["Aardvark", "Baboon", "Camel", "Deer", "Elephant", "Ferret", "Gerbil", "Hyena"];
+var topics = ["Aardvark", "Baboon", "Camel", "Deer", "Elephant", "Ferret", "Gerbil"];
 
 $(document).ready(function () {
 	addingButtons();
