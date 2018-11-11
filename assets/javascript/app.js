@@ -33,7 +33,10 @@ $(document).ready(function () {
 					var giphyDiv = $("<div>");
 					var title = results[i].title;
 					var _txt = title.charAt(0).toUpperCase() + title.slice(1);
-					//var t = $("<p>").text("Title: " + _txt);
+					var shortText =  jQuery.trim(_txt).substring(0, 20)
+					.split(" ").slice(0, -1).join(" ");
+
+					var t = $("<p>").text("Title: " + shortText);
 					var r = $("<p>").text("Rating: " + results[i].rating.toUpperCase());
 					var giphyImage = $("<img>");
 
@@ -43,7 +46,7 @@ $(document).ready(function () {
 					giphyImage.attr("data-state", "still");
 					giphyImage.addClass("gif");
 
-					//giphyDiv.append(t);
+					giphyDiv.append(t);
 					giphyDiv.append(r)
 					giphyDiv.append(giphyImage);
 					$(".gifDisplay").prepend(giphyDiv);
@@ -88,24 +91,5 @@ $(document).ready(function () {
 		}
 
 	});
-
-
-	window.onscroll = function() {myFunction()};
-
-	// Get the header
-	var header = document.getElementById("header-content");
-	
-	// Get the offset position of the navbar
-	var sticky = header.offsetTop;
-	
-	// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-	function myFunction() {
-		if (window.pageYOffset > sticky) {
-			header.classList.add("sticky");
-		} else {
-			header.classList.remove("sticky");
-		}
-	}
-
 
 });
