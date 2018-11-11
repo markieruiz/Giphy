@@ -1,6 +1,6 @@
 
 var api_Key = "FrAfCkgZ9Zx55XRZn1U3yYUdnsf7NQcA";
-var topics = ["Alligator", "Bugs", "Horse", "Zebra", "Cat", "Dog", "Monkey", "Lizard"];
+var topics = ["Aardvark", "Baboon", "Camel", "Deer", "Elephant", "Ferret", "Gerbil", "Hyena"];
 
 $(document).ready(function () {
 	addingButtons();
@@ -12,7 +12,6 @@ $(document).ready(function () {
 			giphyBtn.addClass("buttonWords");
 			giphyBtn.attr("data-gifName", topics[i]);
 			giphyBtn.text(topics[i]);
-			// giphyBtn.text(buttons[i].toUpperCase());
 			$("#buttons").append(giphyBtn);
 		}
 	}
@@ -89,7 +88,6 @@ $(document).ready(function () {
 		addingButtons();
 		$("#giphy-input").val('');
 		}
-
 	});
 
 });
