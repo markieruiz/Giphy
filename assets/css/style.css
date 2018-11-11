@@ -1,7 +1,83 @@
+main {
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.col:nth-child(n+1) {
+    margin-left: 2rem;
+}
+
+@media (max-width: 680px) {
+    .flex-grid {
+        display: block;
+    }
+    .single-column .col {
+        margin: 2rem;
+        width: auto;
+    }
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
+.section-title {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+html {
+    background: #F9FCFF;
+    color: #333;
+    font-size: 10px;
+    font-family: Open Sans, sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.form-group {
+    margin-right: 75px;
+    text-align: left;
+}
+
+.instructions {
+    font-size: 28px;
+    color: white;   
+}
+
+#giphy-input {
+    height: 30px;
+    margin-bottom: inherit;
+    font-size: 16px;
+}
+
+#find-giphy {
+    margin-left: 65px;
+    font-size:18px;
+    padding: 5 7.5 5 7.5;
+    width: 150px;
+    font-weight: bold;
+}
 
 button {
     margin: 5px;
-    }
+}
     
 img {
     height: 300px;
@@ -16,13 +92,31 @@ img {
 
 p {
     padding:0px 25px 0px 25px;
+    color: white;
+    display: flex;
+    align-items: center;
 
+}
+
+.lead {
+    padding: 0px;
 }
 
 #giphy-form {
 float: right;
-padding:100px;
+padding:75px;
 align-items: left; 
-
 }
- 
+
+.row {
+    display: inline-flex;
+}
+
+/* .container {
+    background: none;
+} */
+body {
+    background-image: url("../images/spectra_mercury.jpg");
+    color: #777777;
+    overflow: auto;
+}
