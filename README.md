@@ -4,7 +4,7 @@ Giphy API
 #Things to note: 
 #1 - Animated background
 #2 - Favicon to browser tab added
-#3 - Creating a new button will automaticallly capitalize the first letter
+#3 - Creating a new button will automatically capitalize the first letter
 #4 - Site is mobile responsive
 
 Instructions
